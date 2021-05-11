@@ -15,8 +15,8 @@ class Home extends Component {
           more!
         </p>
         <p>
-          If you want to know ,more about the service we provide, navigate
-          through the page. And hava fun :)
+          If you want to know more about the service we provide, navigate
+          through the page. And have fun :)
         </p>
         <hr />
       </div>
