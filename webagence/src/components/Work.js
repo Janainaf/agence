@@ -6,13 +6,13 @@ const Works = () => (
       <h2>Works </h2>
       <ul className="work-nav">
         <li>
-          <a href="/works/html">HTML</a>
+          <a href="/works/html">Platon</a>
         </li>
         <li>
-          <a href="/works/css">CSS</a>
+          <a href="/works/css">Solane</a>
         </li>
         <li>
-          <a href="/works/javascript">JavaScript</a>
+          <a href="/works/javascript">Sedal</a>
         </li>
       </ul>
     </div>
