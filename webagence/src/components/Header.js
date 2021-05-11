@@ -2,9 +2,8 @@ import React from "react";
 
 const Header = () => (
   <header>
-    <span className="icn-logo">
-      <i className="material-icons">code</i>
-    </span>
+    <button>Dark/Light</button>
+
     <ul className="main-nav">
       <li>
         <a href="#">Home</a>
@@ -14,9 +13,6 @@ const Header = () => (
       </li>
       <li>
         <a href="#">Works</a>
-      </li>
-      <li>
-        <button>Dark/Light</button>
       </li>
     </ul>
   </header>
