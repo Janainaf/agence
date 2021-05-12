@@ -24,7 +24,6 @@ ul {
   padding: 0;
 }
 h2 {
-  color: #404040;
   font-size: 1.6em;
   margin-bottom: 1.25em;
 }
@@ -73,9 +72,9 @@ button {
   max-width: 780px;
   padding-bottom: 2em;
   margin: 0 auto 2em;
-  background: #fff;
+  /* background: #fff; */
   border-radius: 0.5em;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px black;
   overflow: hidden;
 }
 header {
