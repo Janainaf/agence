@@ -1,23 +1,24 @@
 import React from "react";
+import { Route, NavLink } from "react-router-dom";
+import Featured from "./StudyCase";
 
 const Works = () => (
   <div className="main-content work">
     <div className="work-header group">
-      <h2>Works </h2>
+      <h2> Projects </h2>
       <ul className="work-nav">
         <li>
-          <a href="/works/platon">Platon</a>
+          <NavLink to="/works/platon">Platon</NavLink>
         </li>
         <li>
-          <a href="/works/solane">Solane</a>
+          <NavLink to="/works/solane">Solane</NavLink>
         </li>
         <li>
-          <a href="/works/sedal">Sedal</a>
+          <NavLink to="/works/sedal">Sedal</NavLink>
         </li>
       </ul>
     </div>
-
-    {/* Write routes here... */}
+    <Route path="/works/platon" component={Featured} />
   </div>
 );
 

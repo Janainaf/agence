@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import DarkMode from "./Darkmode";
 
 const Header = () => (
   <header>
-    <button>Dark/Light</button>
-
+    <DarkMode></DarkMode>{" "}
     <ul className="main-nav">
       <li>
         <NavLink exact to="/">
@@ -17,8 +17,8 @@ const Header = () => (
         </NavLink>
       </li>
       <li>
-        <NavLink exact to="works">
-          Works
+        <NavLink exact to="/works">
+          Projects
         </NavLink>
       </li>
     </ul>

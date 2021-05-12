@@ -1,21 +1,16 @@
-export const StucyCases = [
-  {
-    title: "Le challenge",
-    description:
-      "Platon a décidé de se lancer à l'époque malgré une crise économique difficile. Nous avons été derrière eux pour leur apporter le meilleur du Web et du digital. Nous sommes vraiment la meilleure agence.",
-    id: "platon",
-  },
-  {
-    title: "Solane est le premier vendeur de fraises du Poitou-Charentes",
-    description:
-      "Et c'est grâce à nous. Dans les moments les meilleurs comme les plus durs, nos campagnes de communication sur la place du marché ont fonctionné.",
-    id: "solane",
-  },
-  {
-    title:
-      "Sedal, l'entreprise qui a commencé tout en bas... Et qui est toujours tout en bas",
-    description:
-      "Malgré nos conseils et notre site web créé sur Wix, Sedal semble ne pas vouloir décoller. Mais comme un grand homme et une grande femme l'ont dit, les derniers seront les premiers.",
-    id: "sedal",
-  },
-];
+import React from "react";
+
+const Featured = ({ match }) => {
+  let project = match.params.project;
+  return (
+    <div className="main-content">
+      <h2>{project} </h2>
+      <p>
+        Introducing <strong>{project}</strong>, a project that was done by us.{" "}
+        <strong></strong>!
+      </p>
+    </div>
+  );
+};
+
+export default Featured;
