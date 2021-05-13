@@ -1,16 +1,28 @@
 import React from "react";
 
-const Featured = ({ match }) => {
-  let project = match.params.project;
+const Project = (props) => (
+  <li className="work media group">
+    <div>
+      <h3>{props.title}</h3>
+      <p>{props.desc}</p>
+    </div>
+  </li>
+);
+const ProjectContainer = (props) => {
+  let projects = props.data.map((project) => {
+    return (
+      <Project
+        title={project.title}
+        desc={project.description}
+        key={project.id}
+      />
+    );
+  });
   return (
-    <div className="main-content">
-      <h2>{project} </h2>
-      <p>
-        Introducing <strong>{project}</strong>, a project that was done by us.{" "}
-        <strong></strong>!
-      </p>
+    <div>
+      <ul>{projects}</ul>
     </div>
   );
 };
 
-export default Featured;
+export default ProjectContainer;

@@ -3,8 +3,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
 import About from "./About";
-import Works from "./Work";
-import Featured from "./StudyCase";
+import Work from "./Work";
 
 const App = () => (
   <BrowserRouter>
@@ -12,9 +11,7 @@ const App = () => (
       <Header></Header>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route exact path="/works" component={Works} />
-      <Route path="/works/:project" component={Featured} />
-      {/* let path = `${match.url}/relative-path`; */}
+      <Route path="/works" component={Work} />
     </div>
   </BrowserRouter>
 );
