@@ -1,21 +1,14 @@
 import React from "react";
 
-const Project = (props) => (
-  <li className="work media group">
-    <div>
-      <h3>{props.title}</h3>
-      <p>{props.desc}</p>
-    </div>
-  </li>
-);
 const ProjectContainer = (props) => {
   let projects = props.data.map((project) => {
     return (
-      <Project
-        title={project.title}
-        desc={project.description}
-        key={project.id}
-      />
+      <li className="work media group">
+        <div>
+          <h3>{project.title}</h3>
+          <p>{project.description}</p>
+        </div>
+      </li>
     );
   });
   return (
